@@ -3,24 +3,136 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My GitHub Pages Site</title>
+  <title>Projects - Segmentation and Recommendation</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      text-align: center;
-      margin-top: 50px;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
     }
-    h1 {
+
+    .container {
+      width: 90%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h2 {
+      margin-top: 40px;
+      color: #333;
+      text-align: center;
+    }
+
+    .project-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .project-card {
+      width: 300px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-header {
+      background-color: #2c3e50;
+      color: #fff;
+      padding: 10px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .project-body {
+      padding: 20px;
+    }
+
+    .project-body h3 {
+      margin: 0;
+      font-size: 20px;
       color: #333;
     }
-    p {
-      font-size: 18px;
+
+    .project-body p {
+      margin-top: 10px;
+      font-size: 16px;
       color: #666;
+    }
+
+    @media (max-width: 768px) {
+      .project-grid {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to My GitHub Pages Site</h1>
-  <p>This is a simple static website hosted on GitHub Pages.</p>
+
+  <div class="container">
+    <!-- Segmentation Section -->
+    <h2>Segmentation</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <div class="project-header">Project 1</div>
+        <div class="project-body">
+          <h3>Customer Segmentation</h3>
+          <p>Develop a machine learning model to segment customers based on purchasing behavior.</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-header">Project 2</div>
+        <div class="project-body">
+          <h3>Market Segmentation</h3>
+          <p>Analyze demographic data to identify distinct market segments for targeted marketing campaigns.</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-header">Project 3</div>
+        <div class="project-body">
+          <h3>Product Segmentation</h3>
+          <p>Use clustering techniques to group products based on features and customer preferences.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recommendation Section -->
+    <h2>Recommendation</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <div class="project-header">Project 1</div>
+        <div class="project-body">
+          <h3>Movie Recommendation</h3>
+          <p>Build a recommendation engine to suggest movies based on user ratings and preferences.</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-header">Project 2</div>
+        <div class="project-body">
+          <h3>Product Recommendation</h3>
+          <p>Develop a product recommendation system for e-commerce using collaborative filtering.</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-header">Project 3</div>
+        <div class="project-body">
+          <h3>Content-Based Recommendation</h3>
+          <p>Implement a content-based recommendation system using item features and user preferences.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>
